@@ -8,6 +8,9 @@ export type FacebookIconType = {
   /** Style props */
   propHeight?: CSSProperties["height"];
   propWidth?: CSSProperties["width"];
+  facebookIconFlex?: CSSProperties["flex"];
+  facebookIconAlignSelf?: CSSProperties["alignSelf"];
+  facebookIconMaxHeight?: CSSProperties["maxHeight"];
 };
 
 const FacebookIcon: NextPage<FacebookIconType> = ({
@@ -15,17 +18,29 @@ const FacebookIcon: NextPage<FacebookIconType> = ({
   facebook,
   propHeight,
   propWidth,
+  facebookIconFlex,
+  facebookIconAlignSelf,
+  facebookIconMaxHeight,
 }) => {
   const facebookIconStyle: CSSProperties = useMemo(() => {
     return {
       height: propHeight,
       width: propWidth,
+      flex: facebookIconFlex,
+      alignSelf: facebookIconAlignSelf,
+      maxHeight: facebookIconMaxHeight,
     };
-  }, [propHeight, propWidth]);
+  }, [
+    propHeight,
+    propWidth,
+    facebookIconFlex,
+    facebookIconAlignSelf,
+    facebookIconMaxHeight,
+  ]);
 
   return (
     <img
-      className={`h-[2.5rem] w-[1rem] relative overflow-hidden shrink-0 ${className}`}
+      className={`h-10 w-4 relative overflow-hidden shrink-0 ${className}`}
       loading="lazy"
       alt=""
       src={facebook}

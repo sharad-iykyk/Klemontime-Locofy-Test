@@ -8,6 +8,9 @@ export type LinkedinIconType = {
   /** Style props */
   propHeight?: CSSProperties["height"];
   propWidth?: CSSProperties["width"];
+  linkedinIconFlex?: CSSProperties["flex"];
+  linkedinIconAlignSelf?: CSSProperties["alignSelf"];
+  linkedinIconMaxHeight?: CSSProperties["maxHeight"];
 };
 
 const LinkedinIcon: NextPage<LinkedinIconType> = ({
@@ -15,17 +18,29 @@ const LinkedinIcon: NextPage<LinkedinIconType> = ({
   linkedin,
   propHeight,
   propWidth,
+  linkedinIconFlex,
+  linkedinIconAlignSelf,
+  linkedinIconMaxHeight,
 }) => {
   const linkedinIconStyle: CSSProperties = useMemo(() => {
     return {
       height: propHeight,
       width: propWidth,
+      flex: linkedinIconFlex,
+      alignSelf: linkedinIconAlignSelf,
+      maxHeight: linkedinIconMaxHeight,
     };
-  }, [propHeight, propWidth]);
+  }, [
+    propHeight,
+    propWidth,
+    linkedinIconFlex,
+    linkedinIconAlignSelf,
+    linkedinIconMaxHeight,
+  ]);
 
   return (
     <img
-      className={`h-[2.5rem] w-[1rem] relative overflow-hidden shrink-0 ${className}`}
+      className={`h-10 w-4 relative overflow-hidden shrink-0 ${className}`}
       loading="lazy"
       alt=""
       src={linkedin}

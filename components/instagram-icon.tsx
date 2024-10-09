@@ -7,22 +7,40 @@ export type InstagramIconType = {
 
   /** Style props */
   propHeight?: CSSProperties["height"];
+  instagramIconWidth?: CSSProperties["width"];
+  instagramIconFlex?: CSSProperties["flex"];
+  instagramIconAlignSelf?: CSSProperties["alignSelf"];
+  instagramIconMaxHeight?: CSSProperties["maxHeight"];
 };
 
 const InstagramIcon: NextPage<InstagramIconType> = ({
   className = "",
   instagram,
   propHeight,
+  instagramIconWidth,
+  instagramIconFlex,
+  instagramIconAlignSelf,
+  instagramIconMaxHeight,
 }) => {
   const instagramIconStyle: CSSProperties = useMemo(() => {
     return {
       height: propHeight,
+      width: instagramIconWidth,
+      flex: instagramIconFlex,
+      alignSelf: instagramIconAlignSelf,
+      maxHeight: instagramIconMaxHeight,
     };
-  }, [propHeight]);
+  }, [
+    propHeight,
+    instagramIconWidth,
+    instagramIconFlex,
+    instagramIconAlignSelf,
+    instagramIconMaxHeight,
+  ]);
 
   return (
     <img
-      className={`h-[2.5rem] w-[1rem] relative overflow-hidden shrink-0 ${className}`}
+      className={`h-10 w-4 relative overflow-hidden shrink-0 ${className}`}
       loading="lazy"
       alt=""
       src={instagram}

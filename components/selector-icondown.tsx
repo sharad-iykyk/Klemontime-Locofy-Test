@@ -8,11 +8,7 @@ const SelectorIcondown: NextPage<SelectorIcondownType> = ({
   className = "",
 }) => {
   return (
-    <img
-      className={`h-[1rem] w-[1rem] relative ${className}`}
-      alt=""
-      src="/arrow.svg"
-    />
+    <img className={`h-4 w-4 relative ${className}`} alt="" src="/arrow.svg" />
   );
 };
 

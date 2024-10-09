@@ -10,17 +10,17 @@ const SidebarMenuHeader: NextPage<SidebarMenuHeaderType> = ({
 }) => {
   return (
     <div
-      className={`w-[12.625rem] h-[2.5rem] flex flex-row items-start justify-between min-w-[6.375rem] max-w-[15.75rem] ${className}`}
+      className={`w-[202px] h-10 flex flex-row items-start justify-between min-w-[102px] max-w-[252px] ${className}`}
     >
-      <div className="h-[2.5rem] w-[2.388rem] flex flex-row items-center justify-start">
+      <div className="h-10 w-[38.2px] flex flex-row items-center justify-start">
         <img
-          className="h-[2.5rem] w-[2.388rem] relative"
+          className="h-10 w-[38.2px] relative"
           loading="lazy"
           alt=""
           src="/vector.svg"
         />
       </div>
-      <VariantsolidColordefault />
+      <VariantsolidColordefault primary="/primary.svg" />
     </div>
   );
 };

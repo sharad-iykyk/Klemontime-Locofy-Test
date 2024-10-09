@@ -1,19 +1,38 @@
 import type { NextPage } from "next";
+import { useMemo, type CSSProperties } from "react";
 
 export type EnvelopeType = {
   className?: string;
+  primary?: string;
+
+  /** Style props */
+  envelopeHeight?: CSSProperties["height"];
+  envelopeWidth?: CSSProperties["width"];
 };
 
-const Envelope: NextPage<EnvelopeType> = ({ className = "" }) => {
+const Envelope: NextPage<EnvelopeType> = ({
+  className = "",
+  primary,
+  envelopeHeight,
+  envelopeWidth,
+}) => {
+  const envelopeStyle: CSSProperties = useMemo(() => {
+    return {
+      height: envelopeHeight,
+      width: envelopeWidth,
+    };
+  }, [envelopeHeight, envelopeWidth]);
+
   return (
     <div
-      className={`h-[0.938rem] w-[1.25rem] overflow-hidden shrink-0 flex flex-col items-start justify-start ${className}`}
+      className={`h-[15px] w-5 overflow-hidden shrink-0 flex flex-col items-start justify-start ${className}`}
+      style={envelopeStyle}
     >
       <img
-        className="w-[1.25rem] h-[0.938rem] relative"
+        className="w-5 h-[15px] relative"
         loading="lazy"
         alt=""
-        src="/primary-3.svg"
+        src={primary}
       />
     </div>
   );

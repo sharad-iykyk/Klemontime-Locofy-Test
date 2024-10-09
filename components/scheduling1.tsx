@@ -15,146 +15,135 @@ export type Scheduling1Type = {
 const Scheduling1: NextPage<Scheduling1Type> = ({ className = "" }) => {
   return (
     <div
-      className={`self-stretch flex flex-row items-start justify-center max-w-full text-left text-[1.25rem] text-gray1 font-poppins ${className}`}
+      className={`self-stretch flex flex-row items-start justify-center max-w-full text-left text-xl text-gray1 font-poppins ${className}`}
     >
-      <div className="flex-1 flex flex-row items-start justify-between max-w-full gap-[1.25rem] mq1050:flex-wrap">
-        <div className="w-[31.25rem] flex flex-col items-start justify-start gap-[2.25rem] max-w-full mq750:gap-[1.125rem] mq750:min-w-full mq1050:flex-1">
-          <div className="flex flex-col items-start justify-start gap-[0.75rem] max-w-full">
-            <div className="relative font-medium mq450:text-[1rem]">
+      <div className="flex-1 flex flex-row items-start justify-between max-w-full gap-5 mq1050:flex-wrap">
+        <div className="w-[500px] flex flex-col items-start justify-start gap-9 max-w-full mq750:gap-[18px] mq750:min-w-full mq1050:flex-1">
+          <div className="flex flex-col items-start justify-start gap-3 max-w-full">
+            <div className="relative font-medium mq450:text-base">
               Choose a platform
             </div>
-            <div className="flex flex-row items-center justify-start gap-[0.75rem] text-[0.875rem] text-colors-base-default-foreground font-text-small mq750:flex-wrap">
-              <button className="cursor-pointer [border:none] py-[0.656rem] px-[1rem] bg-clear-white-for-bg-and-elements h-[2.5rem] w-[7.75rem] rounded-xl flex flex-row items-center justify-center box-border gap-[0.375rem]">
-                <InstagramIcon instagram="/instagram.svg" propHeight="1rem" />
-                <div className="h-[1.188rem] w-[4.375rem] flex flex-row items-center justify-center gap-[0.5rem]">
-                  <img
-                    className="w-[1.25rem] relative h-[1.25rem] hidden"
-                    alt=""
-                  />
-                  <div className="h-[1.188rem] w-[4.375rem] flex flex-row items-center justify-center gap-[0.5rem]">
-                    <div className="hidden flex-col items-center justify-center gap-[0.5rem]">
+            <div className="flex flex-row items-center justify-start gap-3 text-sm text-colors-base-default-foreground font-text-small mq750:flex-wrap">
+              <button className="cursor-pointer [border:none] py-[10.5px] px-4 bg-clear-white-for-bg-and-elements h-10 w-[124px] rounded-xl flex flex-row items-center justify-center box-border gap-1.5">
+                <InstagramIcon
+                  instagram="/instagram.svg"
+                  propHeight="16px"
+                  instagramIconWidth="16px"
+                  instagramIconFlex="unset"
+                  instagramIconAlignSelf="unset"
+                  instagramIconMaxHeight="unset"
+                />
+                <div className="h-[19px] w-[70px] flex flex-row items-center justify-center gap-2">
+                  <img className="w-5 relative h-5 hidden" alt="" />
+                  <div className="h-[19px] w-[70px] flex flex-row items-center justify-center gap-2">
+                    <div className="hidden flex-col items-center justify-center gap-2">
                       <img
-                        className="w-[1.294rem] h-[1.25rem] relative object-cover"
+                        className="w-[20.7px] h-5 relative object-cover"
                         alt=""
                       />
-                      <div className="relative text-[0.875rem] leading-[1.25rem] font-text-small text-colors-base-default-foreground text-left hidden">
+                      <div className="relative text-sm leading-[20px] font-text-small text-colors-base-default-foreground text-left hidden">
                         Loading...
                       </div>
                     </div>
-                    <div className="h-[1.188rem] w-[4.438rem] relative text-[1rem] font-medium font-lato-for-texts text-gray1 text-left flex items-center shrink-0">
+                    <div className="h-[19px] w-[71px] relative text-base font-medium font-lato-for-texts text-gray1 text-left flex items-center shrink-0">
                       Instagram
                     </div>
                   </div>
-                  <img
-                    className="w-[1.25rem] relative h-[1.25rem] hidden"
-                    alt=""
-                  />
+                  <img className="w-5 relative h-5 hidden" alt="" />
                 </div>
               </button>
-              <button className="cursor-pointer border-clear-white-for-bg-and-elements border-[1px] border-solid py-[0.656rem] px-[1rem] bg-clear-white-for-bg-and-elements h-[2.5rem] w-[7.75rem] rounded-xl box-border flex flex-row items-center justify-center gap-[0.375rem]">
+              <button className="cursor-pointer border-clear-white-for-bg-and-elements border-[1px] border-solid py-[10.5px] px-4 bg-clear-white-for-bg-and-elements h-10 w-[124px] rounded-xl box-border flex flex-row items-center justify-center gap-1.5">
                 <LinkedinIcon
                   linkedin="/linkedin.svg"
-                  propHeight="1rem"
-                  propWidth="1.625rem"
+                  propHeight="16px"
+                  propWidth="26px"
+                  linkedinIconFlex="unset"
+                  linkedinIconAlignSelf="unset"
+                  linkedinIconMaxHeight="unset"
                 />
-                <div className="h-[1.188rem] w-[3.75rem] flex flex-row items-center justify-center gap-[0.5rem]">
-                  <img
-                    className="w-[1.25rem] relative h-[1.25rem] hidden"
-                    alt=""
-                  />
-                  <div className="h-[1.188rem] w-[3.75rem] flex flex-row items-center justify-center gap-[0.5rem]">
-                    <div className="hidden flex-col items-center justify-center gap-[0.5rem]">
+                <div className="h-[19px] w-[60px] flex flex-row items-center justify-center gap-2">
+                  <img className="w-5 relative h-5 hidden" alt="" />
+                  <div className="h-[19px] w-[60px] flex flex-row items-center justify-center gap-2">
+                    <div className="hidden flex-col items-center justify-center gap-2">
                       <img
-                        className="w-[1.294rem] h-[1.25rem] relative object-cover"
+                        className="w-[20.7px] h-5 relative object-cover"
                         alt=""
                       />
-                      <div className="relative text-[0.875rem] leading-[1.25rem] font-text-small text-colors-base-default-foreground text-left hidden">
+                      <div className="relative text-sm leading-[20px] font-text-small text-colors-base-default-foreground text-left hidden">
                         Loading...
                       </div>
                     </div>
-                    <div className="h-[1.188rem] w-[3.813rem] relative text-[1rem] font-medium font-lato-for-texts text-gray1 text-left flex items-center shrink-0">
+                    <div className="h-[19px] w-[61px] relative text-base font-medium font-lato-for-texts text-gray1 text-left flex items-center shrink-0">
                       LinkedIn
                     </div>
                   </div>
-                  <img
-                    className="w-[1.25rem] relative h-[1.25rem] hidden"
-                    alt=""
-                  />
+                  <img className="w-5 relative h-5 hidden" alt="" />
                 </div>
               </button>
-              <button className="cursor-pointer border-clear-white-for-bg-and-elements border-[1px] border-solid py-[0.656rem] px-[1rem] bg-clear-white-for-bg-and-elements h-[2.5rem] w-[7.75rem] rounded-xl box-border flex flex-row items-center justify-center gap-[0.375rem]">
+              <button className="cursor-pointer border-clear-white-for-bg-and-elements border-[1px] border-solid py-[10.5px] px-4 bg-clear-white-for-bg-and-elements h-10 w-[124px] rounded-xl box-border flex flex-row items-center justify-center gap-1.5">
                 <FacebookIcon
                   facebook="/facebook.svg"
-                  propHeight="1rem"
-                  propWidth="1.125rem"
+                  propHeight="16px"
+                  propWidth="18px"
+                  facebookIconFlex="unset"
+                  facebookIconAlignSelf="unset"
+                  facebookIconMaxHeight="unset"
                 />
-                <div className="h-[1.188rem] w-[4.25rem] flex flex-row items-center justify-center gap-[0.5rem]">
-                  <img
-                    className="w-[1.25rem] relative h-[1.25rem] hidden"
-                    alt=""
-                  />
-                  <div className="h-[1.188rem] w-[4.25rem] flex flex-row items-center justify-center gap-[0.5rem]">
-                    <div className="hidden flex-col items-center justify-center gap-[0.5rem]">
+                <div className="h-[19px] w-[68px] flex flex-row items-center justify-center gap-2">
+                  <img className="w-5 relative h-5 hidden" alt="" />
+                  <div className="h-[19px] w-[68px] flex flex-row items-center justify-center gap-2">
+                    <div className="hidden flex-col items-center justify-center gap-2">
                       <img
-                        className="w-[1.294rem] h-[1.25rem] relative object-cover"
+                        className="w-[20.7px] h-5 relative object-cover"
                         alt=""
                       />
-                      <div className="relative text-[0.875rem] leading-[1.25rem] font-text-small text-colors-base-default-foreground text-left hidden">
+                      <div className="relative text-sm leading-[20px] font-text-small text-colors-base-default-foreground text-left hidden">
                         Loading...
                       </div>
                     </div>
-                    <div className="h-[1.188rem] w-[4.313rem] relative text-[1rem] font-medium font-lato-for-texts text-gray1 text-left flex items-center shrink-0">
+                    <div className="h-[19px] w-[69px] relative text-base font-medium font-lato-for-texts text-gray1 text-left flex items-center shrink-0">
                       Facebook
                     </div>
                   </div>
-                  <img
-                    className="w-[1.25rem] relative h-[1.25rem] hidden"
-                    alt=""
-                  />
+                  <img className="w-5 relative h-5 hidden" alt="" />
                 </div>
               </button>
-              <div className="h-[2.5rem] w-[4.063rem] rounded-xl bg-clear-white-for-bg-and-elements flex flex-row items-center justify-center py-[0.656rem] px-[1rem] box-border gap-[0.375rem]">
+              <div className="h-10 w-[65px] rounded-xl bg-clear-white-for-bg-and-elements flex flex-row items-center justify-center py-[10.5px] px-4 box-border gap-1.5">
                 <XTwitter />
-                <div className="h-[1.188rem] w-[0.688rem] flex flex-row items-center justify-center gap-[0.5rem]">
-                  <img
-                    className="w-[1.25rem] relative h-[1.25rem] hidden"
-                    alt=""
-                  />
-                  <div className="h-[1.188rem] w-[0.688rem] flex flex-row items-center justify-center gap-[0.5rem]">
-                    <div className="hidden flex-col items-center justify-center gap-[0.5rem]">
+                <div className="h-[19px] w-[11px] flex flex-row items-center justify-center gap-2">
+                  <img className="w-5 relative h-5 hidden" alt="" />
+                  <div className="h-[19px] w-[11px] flex flex-row items-center justify-center gap-2">
+                    <div className="hidden flex-col items-center justify-center gap-2">
                       <img
-                        className="w-[1.294rem] h-[1.25rem] relative object-cover"
+                        className="w-[20.7px] h-5 relative object-cover"
                         alt=""
                       />
-                      <div className="relative leading-[1.25rem] hidden">
+                      <div className="relative leading-[20px] hidden">
                         Loading...
                       </div>
                     </div>
-                    <div className="h-[1.188rem] w-[0.75rem] relative text-[1rem] font-medium font-lato-for-texts text-gray1 flex items-center shrink-0">
+                    <div className="h-[19px] w-3 relative text-base font-medium font-lato-for-texts text-gray1 flex items-center shrink-0">
                       X
                     </div>
                   </div>
-                  <img
-                    className="w-[1.25rem] relative h-[1.25rem] hidden"
-                    alt=""
-                  />
+                  <img className="w-5 relative h-5 hidden" alt="" />
                 </div>
               </div>
             </div>
           </div>
-          <div className="self-stretch flex flex-col items-start justify-start gap-[0.75rem]">
-            <div className="relative font-medium mq450:text-[1rem]">
+          <div className="self-stretch flex flex-col items-start justify-start gap-3">
+            <div className="relative font-medium mq450:text-base">
               Schedule post
             </div>
-            <div className="self-stretch flex flex-col items-start justify-start text-[0.75rem] font-lato-for-texts">
-              <div className="self-stretch shadow-[0px_1px_2px_rgba(0,_0,_0,_0.05)] rounded-xl bg-clear-white-for-bg-and-elements flex flex-row items-center justify-between py-[0.625rem] px-[0.75rem] box-border min-h-[2rem] gap-[1.25rem]">
-                <div className="flex flex-col items-start justify-center pt-[0rem] px-[0.375rem] pb-[0.125rem]">
-                  <div className="flex flex-row items-center justify-start py-[0rem] pl-[0rem] pr-[0.437rem]">
-                    <div className="relative leading-[1rem] inline-block min-w-[5.563rem]">
+            <div className="self-stretch flex flex-col items-start justify-start text-xs font-lato-for-texts">
+              <div className="self-stretch shadow-[0px_1px_2px_rgba(0,_0,_0,_0.05)] rounded-xl bg-clear-white-for-bg-and-elements flex flex-row items-center justify-between py-2.5 px-3 box-border min-h-[32px] gap-5">
+                <div className="flex flex-col items-start justify-center pt-0 px-1.5 pb-0.5">
+                  <div className="flex flex-row items-center justify-start py-0 pl-0 pr-[7px]">
+                    <div className="relative leading-[16px] inline-block min-w-[89px]">
                       Set day and time
                     </div>
                   </div>
-                  <div className="flex flex-row items-center justify-start text-[1rem] text-gray">
+                  <div className="flex flex-row items-center justify-start text-base text-gray">
                     <div className="relative font-medium">
                       01/02/2024, 10:55
                     </div>
@@ -164,8 +153,8 @@ const Scheduling1: NextPage<Scheduling1Type> = ({ className = "" }) => {
               </div>
             </div>
           </div>
-          <div className="self-stretch flex flex-col items-start justify-start gap-[0.75rem]">
-            <div className="relative font-medium inline-block min-w-[7.875rem] mq450:text-[1rem]">
+          <div className="self-stretch flex flex-col items-start justify-start gap-3">
+            <div className="relative font-medium inline-block min-w-[126px] mq450:text-base">
               Add content
             </div>
             <img
@@ -175,53 +164,47 @@ const Scheduling1: NextPage<Scheduling1Type> = ({ className = "" }) => {
               src="/frame-23@2x.png"
             />
           </div>
-          <div className="self-stretch flex flex-col items-end justify-center gap-[0.75rem] max-w-full">
-            <div className="self-stretch relative font-medium mq450:text-[1rem]">
+          <div className="self-stretch flex flex-col items-end justify-center gap-3 max-w-full">
+            <div className="self-stretch relative font-medium mq450:text-base">
               Caption
             </div>
             <ContentWrapper
               startContent="pending_125:7906"
               endContent="pending_125:7916"
             />
-            <button className="cursor-pointer border-blue-for-white-bg border-[1px] border-solid py-[0.562rem] px-[0.937rem] bg-[transparent] rounded-xl flex flex-row items-center justify-center gap-[0.5rem]">
+            <button className="cursor-pointer border-blue-for-white-bg border-[1px] border-solid py-[9px] px-[15px] bg-[transparent] rounded-xl flex flex-row items-center justify-center gap-2">
               <img
-                className="h-[1rem] w-[1rem] relative overflow-hidden shrink-0"
+                className="h-4 w-4 relative overflow-hidden shrink-0"
                 alt=""
                 src="/stars.svg"
               />
-              <div className="flex flex-row items-center justify-center gap-[0.5rem]">
-                <img
-                  className="h-[1.25rem] w-[1.25rem] relative hidden"
-                  alt=""
-                />
-                <div className="flex flex-row items-center justify-center gap-[0.5rem]">
-                  <div className="hidden flex-col items-center justify-center gap-[0.5rem]">
+              <div className="flex flex-row items-center justify-center gap-2">
+                <img className="h-5 w-5 relative hidden" alt="" />
+                <div className="flex flex-row items-center justify-center gap-2">
+                  <div className="hidden flex-col items-center justify-center gap-2">
                     <img
-                      className="w-[1.294rem] h-[1.25rem] relative object-cover"
+                      className="w-[20.7px] h-5 relative object-cover"
                       alt=""
                     />
-                    <div className="relative text-[0.875rem] leading-[1.25rem] font-text-small text-colors-base-default-foreground text-left hidden">
+                    <div className="relative text-sm leading-[20px] font-text-small text-colors-base-default-foreground text-left hidden">
                       Loading...
                     </div>
                   </div>
-                  <div className="relative text-[1rem] font-medium font-lato-for-texts text-gray1 text-left inline-block min-w-[6.938rem]">
+                  <div className="relative text-base font-medium font-lato-for-texts text-gray1 text-left inline-block min-w-[111px]">
                     Generate a text
                   </div>
                 </div>
-                <img
-                  className="h-[1.25rem] w-[1.25rem] relative hidden"
-                  alt=""
-                />
+                <img className="h-5 w-5 relative hidden" alt="" />
               </div>
             </button>
           </div>
-          <div className="self-stretch flex flex-col items-start justify-start gap-[0.75rem]">
-            <div className="relative font-medium mq450:text-[1rem]">
+          <div className="self-stretch flex flex-col items-start justify-start gap-3">
+            <div className="relative font-medium mq450:text-base">
               Select a brandkit
             </div>
-            <div className="self-stretch flex flex-col items-start justify-start text-[1rem] font-lato-for-texts">
-              <div className="self-stretch shadow-[0px_1px_2px_rgba(0,_0,_0,_0.05)] rounded-xl bg-clear-white-for-bg-and-elements flex flex-row items-center justify-between py-[0.625rem] px-[0.75rem] box-border min-h-[2rem] gap-[1.25rem]">
-                <div className="flex flex-col items-start justify-center pt-[0.5rem] px-[0.375rem] pb-[0.625rem]">
+            <div className="self-stretch flex flex-col items-start justify-start text-base font-lato-for-texts">
+              <div className="self-stretch shadow-[0px_1px_2px_rgba(0,_0,_0,_0.05)] rounded-xl bg-clear-white-for-bg-and-elements flex flex-row items-center justify-between py-2.5 px-3 box-border min-h-[32px] gap-5">
+                <div className="flex flex-col items-start justify-center pt-2 px-1.5 pb-2.5">
                   <div className="flex flex-row items-center justify-start">
                     <div className="relative font-medium">BrandKit</div>
                   </div>
@@ -230,8 +213,8 @@ const Scheduling1: NextPage<Scheduling1Type> = ({ className = "" }) => {
               </div>
             </div>
           </div>
-          <div className="self-stretch flex flex-col items-end justify-center gap-[0.75rem] max-w-full">
-            <div className="self-stretch relative font-medium mq450:text-[1rem]">
+          <div className="self-stretch flex flex-col items-end justify-center gap-3 max-w-full">
+            <div className="self-stretch relative font-medium mq450:text-base">
               Context generator
             </div>
             <ContentWrapper
@@ -240,44 +223,53 @@ const Scheduling1: NextPage<Scheduling1Type> = ({ className = "" }) => {
             />
           </div>
           <div className="self-stretch flex flex-row items-center justify-end">
-            <button className="cursor-pointer border-original-blue-for-black-bg border-[1px] border-solid py-[0.562rem] px-[0.937rem] bg-original-blue-for-black-bg self-stretch rounded-xl flex flex-row items-center justify-center gap-[0.5rem]">
-              <div className="flex flex-row items-center justify-center gap-[0.5rem]">
-                <img
-                  className="h-[1.25rem] w-[1.25rem] relative hidden"
-                  alt=""
-                />
-                <div className="flex flex-row items-center justify-center gap-[0.5rem]">
-                  <div className="hidden flex-col items-center justify-center gap-[0.5rem]">
+            <button className="cursor-pointer border-original-blue-for-black-bg border-[1px] border-solid py-[9px] px-[15px] bg-original-blue-for-black-bg self-stretch rounded-xl flex flex-row items-center justify-center gap-2">
+              <div className="flex flex-row items-center justify-center gap-2">
+                <img className="h-5 w-5 relative hidden" alt="" />
+                <div className="flex flex-row items-center justify-center gap-2">
+                  <div className="hidden flex-col items-center justify-center gap-2">
                     <img
-                      className="w-[1.294rem] h-[1.25rem] relative object-cover"
+                      className="w-[20.7px] h-5 relative object-cover"
                       alt=""
                     />
-                    <div className="relative text-[0.875rem] leading-[1.25rem] font-text-small text-colors-base-default-foreground text-left hidden">
+                    <div className="relative text-sm leading-[20px] font-text-small text-colors-base-default-foreground text-left hidden">
                       Loading...
                     </div>
                   </div>
-                  <div className="relative text-[1rem] font-medium font-lato-for-texts text-clear-white-for-bg-and-elements text-left inline-block min-w-[2.25rem]">
+                  <div className="relative text-base font-medium font-lato-for-texts text-clear-white-for-bg-and-elements text-left inline-block min-w-[36px]">
                     Next
                   </div>
                 </div>
-                <img
-                  className="h-[1.25rem] w-[1.25rem] relative hidden"
-                  alt=""
-                />
+                <img className="h-5 w-5 relative hidden" alt="" />
               </div>
               <AngleRightIcon />
             </button>
           </div>
         </div>
-        <div className="w-[21.875rem] rounded-xl overflow-hidden shrink-0 flex flex-col items-center justify-center py-[0.625rem] px-[0.187rem] box-border gap-[0.625rem] max-w-full mq450:min-w-full mq1050:flex-1">
-          <div className="flex flex-col items-start justify-start gap-[0.75rem]">
-            <div className="relative font-medium inline-block min-w-[5.25rem] mq450:text-[1rem]">
+        <div className="w-[350px] rounded-xl overflow-hidden shrink-0 flex flex-col items-center justify-center py-2.5 px-[3px] box-border gap-2.5 max-w-full mq450:min-w-full mq1050:flex-1">
+          <div className="flex flex-col items-start justify-start gap-3">
+            <div className="relative font-medium inline-block min-w-[84px] mq450:text-base">
               Preview:
             </div>
-            <div className="flex flex-row items-center justify-start py-[0rem] pl-[0rem] pr-[6.125rem] gap-[0.75rem] mq450:pr-[1.25rem] mq450:box-border">
-              <Property1iconDefault />
-              <Property1iconDefault />
-              <Property1iconDefault />
+            <div className="flex flex-row items-center justify-start py-0 pl-0 pr-[98px] gap-3 mq450:pr-5 mq450:box-border">
+              <Property1iconDefault
+                buttonHeight="40px"
+                buttonWidth="46px"
+                buttonBorderRadius="8px"
+                buttonBackgroundColor="#fff"
+              />
+              <Property1iconDefault
+                buttonHeight="40px"
+                buttonWidth="46px"
+                buttonBorderRadius="8px"
+                buttonBackgroundColor="#fff"
+              />
+              <Property1iconDefault
+                buttonHeight="40px"
+                buttonWidth="46px"
+                buttonBorderRadius="8px"
+                buttonBackgroundColor="#fff"
+              />
               <Property1iconDefault />
             </div>
           </div>

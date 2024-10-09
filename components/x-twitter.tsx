@@ -7,10 +7,10 @@ export type XTwitterType = {
 const XTwitter: NextPage<XTwitterType> = ({ className = "" }) => {
   return (
     <div
-      className={`h-[0.813rem] w-[1rem] overflow-hidden shrink-0 flex flex-col items-start justify-start py-[0rem] pl-[0rem] pr-[0.1rem] box-border ${className}`}
+      className={`h-[13px] w-4 overflow-hidden shrink-0 flex flex-col items-start justify-start py-0 pl-0 pr-[1.6px] box-border ${className}`}
     >
       <img
-        className="w-[0.9rem] h-[0.813rem] relative"
+        className="w-[14.4px] h-[13px] relative"
         alt=""
         src="/primary-8.svg"
       />

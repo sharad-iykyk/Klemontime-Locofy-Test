@@ -7,7 +7,7 @@ export type AngleRightIconType = {
 const AngleRightIcon: NextPage<AngleRightIconType> = ({ className = "" }) => {
   return (
     <img
-      className={`h-[1rem] w-[0.625rem] relative overflow-hidden shrink-0 ${className}`}
+      className={`h-4 w-2.5 relative overflow-hidden shrink-0 ${className}`}
       alt=""
       src="/angleright.svg"
     />

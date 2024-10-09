@@ -16,8 +16,15 @@ module.exports = {
         "colors-base-danger": "#f31260",
         gray: "#7a7a7a",
         "blue-for-white-bg": "#1655e7",
+        linkedin: "#0a66c2",
+        fb: "#1877f2",
+        inst: "#c32aa3",
+        "successfull-green": "#4f8414",
+        "orange-for-white-bg": "#cc4e00",
       },
-      spacing: {},
+      spacing: {
+        "units-unit-5": "20px",
+      },
       fontFamily: {
         poppins: "Poppins",
         "lato-for-texts": "Lato",
@@ -26,24 +33,38 @@ module.exports = {
       borderRadius: {
         xl: "20px",
         "32xl": "51px",
+        "981xl": "1000px",
+        "5xs-2": "7.2px",
+        "6xl": "25px",
       },
     },
     fontSize: {
-      xl: "1.25rem",
-      base: "1rem",
-      sm: "0.875rem",
-      xs: "0.75rem",
-      "26xl": "2.813rem",
-      "8xl": "1.688rem",
-      "17xl": "2.25rem",
+      xl: "20px",
+      base: "16px",
+      sm: "14px",
+      xs: "12px",
+      "26xl": "45px",
+      "8xl": "27px",
+      "17xl": "36px",
+      "5xl": "24px",
+      lgi: "19px",
       inherit: "inherit",
     },
     screens: {
+      mq1325: {
+        raw: "screen and (max-width: 1325px)",
+      },
       lg: {
         max: "1200px",
       },
+      mq1125: {
+        raw: "screen and (max-width: 1125px)",
+      },
       mq1050: {
         raw: "screen and (max-width: 1050px)",
+      },
+      mq800: {
+        raw: "screen and (max-width: 800px)",
       },
       mq750: {
         raw: "screen and (max-width: 750px)",
